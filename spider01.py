@@ -50,6 +50,7 @@ def getData(baseurl):
 			item = str(item)
 			#影片详情的链接
 			link = re.findall(findLink,item)[0] #re库来通过正则表达式查找指定字符串
+			data.append(link)
 			imgSrc = re.findall(findImgSrc,item)[0]
 			data.append(imgSrc)
 			
